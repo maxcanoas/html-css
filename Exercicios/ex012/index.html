@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente ou diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+      <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="./imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/Robot City-QuincasMoreira.mp3" controls autoplay></audio>-->
+<!--primeira forma
+    <video src="midia/videos/limoes.mp4" width="500" autoplay loop></video>-->
+
+    <video width="500" poster="uma thumb criada para ser a capa do vídeo" controls autoplay loop>
+      <source src="midia/videos/limoes.mp4" type="video/mp4">
+      <source src="midia/videos/Limoes.mkv" type="video/mkv">
+      <p>seu navegador não é compatível com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+  </body>
+</html>
